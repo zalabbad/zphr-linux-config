@@ -1,0 +1,21 @@
+configuration {
+	modi: "window,drun,calc";
+	font: "mono 20";
+
+
+	kb-row-up: "Up";
+	kb-row-down: "Down";
+
+	kb-mode-next: "Tab";
+
+	show-icons: true;
+
+	sort: true;
+	sorting-method: "fzf";
+
+	scroll-method: 1;
+	kb-row-tab: "";
+}
+
+@theme "/usr/share/rofi/themes/android_notification.rasi"
+
