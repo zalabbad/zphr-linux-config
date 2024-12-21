@@ -198,7 +198,7 @@ nmap <leader>l <Action>(Forward)
 
 "" Debugging
 map <leader>db <Action>(ToggleLineBreakpoint)
-map <leader>dd <Action>(DebugClass)
+ap <leader>dd <Action>(DebugClass)
 map <leader>ds <Action>(StepOver)
 map <leader>de <Action>(EvaluateExpression)
 
