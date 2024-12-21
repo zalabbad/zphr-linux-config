@@ -1,0 +1,3 @@
+set show-mode-in-prompt
+set vi-ins-mode-string "\1\e[6 q\2"  # Pipe shape for insert mode
+set vi-cmd-mode-string "\1\e[2 q\2"  # Block shape for command mode
