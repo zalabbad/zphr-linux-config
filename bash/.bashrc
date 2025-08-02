@@ -136,7 +136,9 @@ alias c='clear'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias n='nnn -d'
+alias r='ranger'
 alias z='zellij'
+alias jb='jbang'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
