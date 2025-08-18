@@ -6,7 +6,7 @@ alias c='clear'
 # apt aliases
 alias q='apt search'
 alias i='sudo apt install'
-alias u='sudo apt update && sudo apt upgrade && brew update && brew upgrade'
+alias u='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 
 # Tools
 alias lg='lazygit'
