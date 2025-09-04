@@ -4,7 +4,7 @@ alias l='ls -CF'
 alias c='clear'
 
 # bat aliases
-alias bat='batcat' # batcat is the name of the binary on debian
+alias cat='batcat' # batcat is the name of the binary on debian
 bman() {
   man "$@" | bat -l man -p
 }
