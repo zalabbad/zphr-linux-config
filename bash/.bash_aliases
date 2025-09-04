@@ -3,8 +3,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 
-# An alias for bat (binary name is batcat)
-alias bat='batcat'
+# bat aliases
+alias bat='batcat' # batcat is the name of the binary on debian
+bman() {
+  man "$@" | bat -l man -p
+}
 
 # apt aliases
 alias q='apt search'
