@@ -3,6 +3,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 
+# An alias for bat (binary name is batcat)
+alias bat='batcat'
+
 # apt aliases
 alias q='apt search'
 alias i='sudo apt install'
