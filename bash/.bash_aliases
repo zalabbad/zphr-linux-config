@@ -8,6 +8,10 @@ alias q='apt search'
 alias i='sudo apt install'
 alias u='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 
+# Flatpak alisases
+alias fpq='flatpak search'
+alias fpi='flatpak install'
+
 # Tools
 alias lg='lazygit'
 alias ld='lazydocker'
