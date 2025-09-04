@@ -9,6 +9,7 @@ alias i='sudo apt install'
 alias u='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 
 # Flatpak alisases
+alias fp='flatpak'
 alias fpq='flatpak search'
 alias fpi='flatpak install'
 
