@@ -6,7 +6,7 @@ alias c='clear'
 # bat aliases
 alias cat='batcat' # batcat is the name of the binary on debian
 bman() {
-  man "$@" | bat -l man -p
+  man "$@" | batcat -l man -p
 }
 
 # apt aliases
