@@ -2,6 +2,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
+alias ~='cd ~'
 
 # bat aliases
 alias cat='batcat' # batcat is the name of the binary on debian
