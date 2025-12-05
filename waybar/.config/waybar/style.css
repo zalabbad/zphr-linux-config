@@ -1,0 +1,59 @@
+* {
+	font-size: 20px;
+	font-family: "JetBrains Mono", monospace;
+}
+
+/* Waybar Window */
+window#waybar {
+	background: #292b2e;
+	color: #fdf6e3;
+}
+
+#window {
+	padding: 0 10px;
+    background: #1a1a1a;
+}
+
+/* Scratchpad */
+#scratchpad {
+    color: #268bd2;
+    padding: 0 10px;
+}
+
+/* Workspaces */
+#workspaces {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+#workspaces button {
+    margin: 0;
+    padding: 0 10px;
+    color: #fdf6e3;
+    border: 1px solid #292b2e;
+}
+#workspaces button.focused {
+    color: #268bd2;
+    background: #1a1a1a;
+    font-weight: bold;
+}
+#workspaces button:hover:not(.focused):not(.urgent) {
+    background: #1a1a1a;
+}
+#workspaces button.urgent {
+    background: #eb4d4b;
+}
+
+/* Right Side Utils */
+#language,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#tray,
+#temperature,
+#clock {
+    background: #1a1a1a;
+    padding: 0 12px;
+    margin: 0 5px;
+}
