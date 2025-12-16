@@ -5,14 +5,17 @@
   "height": 30,
   // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
-  "spacing": 4,
+  "spacing": 2,
   // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
     "clock",
-    "sway/window"
+    "cpu",
+    "memory",
+    "temperature"
   ],
   "modules-center": [
+    "sway/window",
     "sway/workspaces",
     "sway/mode",
     "sway/scratchpad"
@@ -22,9 +25,6 @@
     //"idle_inhibitor",
     //"network",
     //"power-profiles-daemon",
-    "cpu",
-    "memory",
-    "temperature",
     "backlight",
     "battery#bat2",
     "pulseaudio",
