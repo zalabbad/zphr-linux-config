@@ -9,14 +9,13 @@
   // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "sway/workspaces",
-    "sway/mode",
-    "sway/scratchpad",
-    "custom/media",
+    "clock",
     "sway/window"
   ],
   "modules-center": [
-    "clock"
+    "sway/workspaces",
+    "sway/mode",
+    "sway/scratchpad"
   ],
   "modules-right": [
     //        "mpd",
@@ -242,5 +241,8 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
+  },
+  "sway/window": {
+    "format": "{app_id}"
   }
 }
