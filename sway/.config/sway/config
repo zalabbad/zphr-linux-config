@@ -42,7 +42,7 @@ input type:touchpad {
 }
 input type:keyboard {
   xkb_layout "us,ara"
-  xkb_options caps:swapescape
+  xkb_options "caps:swapescape"
 }
 bindsym $mod+space input "type:keyboard" xkb_switch_layout next
 
@@ -135,7 +135,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
     #bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    bindsym $mod+s layout tabbed
     #bindsym $mod+w layout tabbed
     bindsym $mod+o layout toggle split
 
