@@ -22,7 +22,8 @@ set visualbell
 " Use system clipboard
 set clipboard+=unnamed
 
-let mapleader = " "
+let mapleader = "  "
+map <A-;> <leader>
 
 
 "" Plugin Settings
@@ -217,5 +218,7 @@ nmap \- <Action>(CollapseRegion)
 nmap \+ <Action>(ExpandRegion)
 
 "" Stretch right and left
-nnoremap <A-=> :action StretchSplitToLeft<CR>
-nnoremap <A--> :action StretchSplitToRight<CR>
+nnoremap <A-S-h> :action StretchSplitToLeft<CR>
+nnoremap <A-S-j> :action StretchSplitToBottom<CR>
+nnoremap <A-S-k> :action StretchSplitToTop<CR>
+nnoremap <A-S-l> :action StretchSplitToRight<CR>
