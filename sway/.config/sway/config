@@ -19,6 +19,13 @@ default_floating_border pixel 1
 gaps inner 10
 gaps outer 0
 
+### Output configuration
+# PC Display (Ultrawide)
+output DP-3 mode 5120x1440@164.999Hz pos 0 0
+
+# Laptop Display
+#output eDP-1 mode 1920x1080@60Hz pos 0 0 scale 1.2
+
 ### Idle configuration
 #
 # Example configuration:
@@ -52,7 +59,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
 #
     # System Actions
     bindsym $mod+a exec /home/zayed/zphr-scripts/system/action.sh
-    
+
     # Start a terminal
     bindsym $mod+t exec $term
 
