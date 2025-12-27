@@ -58,7 +58,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
 # Basics:
 #
     # System Actions
-    bindsym $mod+a exec /home/zayed/zphr-scripts/system/action.sh
+    bindsym $mod+a exec /home/zayed/zphr-linux-config/scripts/action.sh
 
     # Start a terminal
     bindsym $mod+t exec $term
