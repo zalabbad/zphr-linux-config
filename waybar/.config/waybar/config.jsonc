@@ -15,7 +15,6 @@
     "sway/scratchpad"
   ],
   "modules-center": [
-    "clock#date",
     "clock"
   ],
   "modules-right": [
@@ -99,12 +98,8 @@
     // }
   },
   "clock": {
-    "format": " {:%I:%M:%S %p}",
+    "format": " {:%I:%M:%S %p |  %a, %b %d}",
     "interval": 1,
-    "tooltip": false
-  },
-  "clock#date": {
-    "format": " {:%a, %b %d}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "cpu": {
