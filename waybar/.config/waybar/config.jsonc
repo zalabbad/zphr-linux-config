@@ -9,14 +9,14 @@
   // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "clock#date",
-    "clock"
-  ],
-  "modules-center": [
     "sway/workspaces",
     "sway/window",
     "sway/mode",
     "sway/scratchpad"
+  ],
+  "modules-center": [
+    "clock#date",
+    "clock"
   ],
   "modules-right": [
     "cpu",
