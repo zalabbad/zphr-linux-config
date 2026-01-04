@@ -152,7 +152,6 @@ map <leader>am <action>(ShowIntentionActions)
 map <leader>as <action>(SearchEverywhere)
 
 " File navigation
-map <leader><leader> <Action>(RecentFiles)
 map <leader>ff <action>(GotoFile)
 map <leader>fr <action>(RecentFiles)
 map <leader>fc <action>(FindInPath)
@@ -222,3 +221,7 @@ nnoremap <A-S-h> :action StretchSplitToLeft<CR>
 nnoremap <A-S-j> :action StretchSplitToBottom<CR>
 nnoremap <A-S-k> :action StretchSplitToTop<CR>
 nnoremap <A-S-l> :action StretchSplitToRight<CR>
+
+"" ======= Tests
+nnoremap <leader>tt :action RunClass<CR>
+nnoremap <leader>td :action DebugClass<CR>
