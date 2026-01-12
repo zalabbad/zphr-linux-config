@@ -14,8 +14,8 @@ set $right l
 include /etc/sway/config-vars.d/*
 
 ### Borders
-default_border pixel 2
-default_floating_border pixel 1
+default_border pixel 3
+default_floating_border pixel 3
 gaps inner 10
 gaps outer 0
 
