@@ -73,9 +73,8 @@ if ! shopt -oq posix; then
 fi
 
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/zayed/.deno/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/zayed/.deno/bin:/home/zayed/.cargo/bin:/home/zayed/.local/bin:$PATH"
 
-#eval "$(zellij setup --generate-auto-start bash)"
 source <(fzf --bash)
 
 export NVM_DIR="$HOME/.nvm"
