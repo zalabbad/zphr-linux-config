@@ -158,7 +158,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    # bindsym $mod+space focus mode_toggle
+    bindsym $mod+Tab focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+Shift+s focus parent
@@ -221,6 +221,7 @@ for_window [app_id="pavucontrol"] floating enable, resize set 700 700, move posi
 for_window [app_id="nwg-displays"] floating enable, resize set 700 700, move position center
 for_window [app_id="blueman-manager"] floating enable, resize set 700 700, move position center
 for_window [app_id="1password"] floating enable, resize set 700 700, move position center
+for_window [app_id="nm-connection-editor"] floating enable, resize set 700 700, move position center
 
 
 
