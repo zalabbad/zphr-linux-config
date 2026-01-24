@@ -27,7 +27,7 @@ open = [
   { run = 'xdg-open "$@"', orphan = true, desc = "Open" },
 ]
 reveal = [
-  { run = 'xdg-open "$(dirname "$0")"', orphan = true, desc = "Reveal" },
+  { run = 'thunar "$(dirname "$0")"', orphan = true, desc = "Reveal" },
 ]
 pager = [
   { run = 'batcat "$@"', block = true, desc = "View with bat" },
