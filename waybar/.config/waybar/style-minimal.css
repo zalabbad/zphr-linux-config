@@ -1,0 +1,181 @@
+/* Minimal theme with pipe separators */
+
+/* ===== Variables ===== */
+@define-color bar-bg       #232B39;
+@define-color text-primary #F9FFFF;
+@define-color text-dim     #777777;
+@define-color text-dark    #666666;
+@define-color separator    #555555;
+@define-color success      #98c379;
+@define-color warning      #e5c07b;
+@define-color critical     #e06c75;
+
+/* ===== Base ===== */
+* {
+    font-size: 18px;
+    font-family: "JetBrains Mono", "FontAwesome", monospace;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: @bar-bg;
+    color: @text-primary;
+    min-height: 24px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== Workspaces ===== */
+#workspaces {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    color: @text-dark;
+    padding: 0 4px;
+    background: transparent;
+    min-width: 20px;
+}
+
+#workspaces button.focused {
+    color: @text-primary;
+    font-weight: bold;
+}
+
+#workspaces button.visible {
+    color: @text-primary;
+}
+
+#workspaces button.urgent {
+    color: @critical;
+    font-weight: bold;
+}
+
+#workspaces button.empty {
+    color: @text-dark;
+}
+
+#workspaces button.persistent {
+    color: @text-dim;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @text-primary;
+}
+
+/* ===== Left-side modules (after workspaces) ===== */
+#window,
+#scratchpad {
+    background-color: transparent;
+    color: @text-primary;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+}
+
+/* Mode (resize, etc) - make it stand out */
+#mode {
+    background-color: @warning;
+    color: @bar-bg;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+}
+
+/* ===== Center module ===== */
+#clock {
+    color: @text-primary;
+    border: none;
+}
+
+/* ===== Right-side modules ===== */
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#wireplumber,
+#wireplumber-microphone,
+#backlight,
+#battery,
+#tray,
+#power-profiles-daemon,
+#language,
+#keyboard-state,
+#network,
+#custom-power {
+    background-color: transparent;
+    color: @text-primary;
+    margin: 0;
+    padding: 0 10px;
+    border-left: 1px solid @separator;
+}
+
+/* ===== Module States ===== */
+
+/* Temperature */
+#temperature.critical {
+    color: @critical;
+}
+
+/* Battery */
+#battery.charging {
+    color: @success;
+}
+
+#battery.warning:not(.charging) {
+    color: @warning;
+}
+
+#battery.critical:not(.charging) {
+    color: @critical;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+/* Pulseaudio / Wireplumber */
+#pulseaudio.muted {
+    color: @text-dark;
+}
+
+#wireplumber.muted,
+#wireplumber-microphone.muted {
+    color: @text-dark;
+}
+
+/* Network */
+#network.disconnected {
+    color: @critical;
+}
+
+#network.linked {
+    color: @warning;
+}
+
+/* Tray */
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @critical;
+}
+
+/* ===== Animations ===== */
+@keyframes blink {
+    to {
+        color: @text-primary;
+    }
+}

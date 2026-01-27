@@ -15,6 +15,7 @@
     "memory",
     "temperature",
     "pulseaudio",
+    "wireplumber#microphone",
     "backlight",
     "battery#bat2",
     "tray",
@@ -164,12 +165,10 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon} {volume}% {format_source}",
-    "format-bluetooth": "{icon} {volume}% {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "|  {volume}%",
-    "format-source-muted": "",
+    "format": " {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": "",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -180,6 +179,13 @@
       "default": ["", ""]
     },
     "on-click": "pavucontrol"
+  },
+  "wireplumber#microphone": {
+    "node-type": "Audio/Source",
+    "format": " {volume}%",
+    "format-muted": " muted",
+    "on-click": "pavucontrol",
+    "scroll-step": 5
   },
   "sway/language": {
     "format": " {}"
