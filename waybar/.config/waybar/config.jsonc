@@ -18,6 +18,7 @@
     "backlight",
     "battery#bat2",
     "tray",
+    "power-profiles-daemon",
     "sway/language",
     "keyboard-state"
   ],
