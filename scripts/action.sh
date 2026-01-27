@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Main menu
-CHOICE=$(printf "⏻ Power\n🖥️ Displays\n🌐 Network\n🔊 Sound" | fuzzel --dmenu -p "Action: " -i)
+CHOICE=$(printf "⏻ Power\n🖥️ Displays\n🌐 Network\n📶 Bluetooth\n🔊 Sound" | fuzzel --dmenu -p "Action: " -i)
 
 case "$CHOICE" in
     *"Power"*)
@@ -24,15 +24,10 @@ case "$CHOICE" in
         nwg-displays
         ;;
     *"Network"*)
-        NETWORK_CHOICE=$(printf "Network\nBluetooth" | fuzzel --dmenu -p "Network" -i)
-        case "$NETWORK_CHOICE" in
-            *"Network"*)
-                nm-connection-editor
-                ;;
-            *"Bluetooth"*)
-                blueman-manager
-                ;;
-        esac
+        nm-connection-editor
+        ;;
+    *"Bluetooth"*)
+        blueman-manager
         ;;
     *"Sound"*)
         pavucontrol
