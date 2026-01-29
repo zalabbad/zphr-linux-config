@@ -14,10 +14,16 @@ set $right l
 include /etc/sway/config-vars.d/*
 
 ### Borders
-default_border pixel 3
-default_floating_border pixel 3
+default_border pixel 5
+default_floating_border pixel 5
 gaps inner 10
 gaps outer 0
+
+# Window colors         border    background  text     indicator  child_border
+client.focused          #ff9e64   #ff9e64     #11111b  #ff9e64    #ff9e64
+client.unfocused        #11111b   #11111b     #888888  #11111b    #11111b
+client.focused_inactive #11111b   #11111b     #888888  #11111b    #11111b
+client.urgent           #ff5555   #ff5555     #ffffff  #ff5555    #ff5555
 
 ### Output configuration
 # PC Display (Ultrawide)
