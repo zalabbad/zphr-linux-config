@@ -1,7 +1,7 @@
 /* Minimal theme with pipe separators */
 
 /* ===== Variables ===== */
-@define-color bar-bg       #232B39;
+@define-color bar-bg       #11111B;
 @define-color text-primary #F9FFFF;
 @define-color text-dim     #777777;
 @define-color text-dark    #666666;
