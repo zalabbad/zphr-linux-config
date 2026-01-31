@@ -73,7 +73,13 @@ if ! shopt -oq posix; then
 fi
 
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/zayed/.deno/bin:/home/zayed/.cargo/bin:/home/zayed/.local/bin:$PATH"
+# PATH
+export PATH="\
+$HOME/.local/bin:\
+$HOME/.opencode/bin:\
+/home/linuxbrew/.linuxbrew/bin:\
+/home/linuxbrew/.linuxbrew/sbin:\
+$PATH"
 
 source <(fzf --bash)
 
