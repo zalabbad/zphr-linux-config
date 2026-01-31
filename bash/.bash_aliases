@@ -28,6 +28,8 @@ alias r='ranger'
 alias z='zellij'
 alias jb='jbang'
 alias ff='fastfetch'
+alias cc='claude'
+alias oc='opencode'
 
 # Yazi - cd to directory on exit
 y() {
