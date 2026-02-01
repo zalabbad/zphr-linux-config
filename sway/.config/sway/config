@@ -33,17 +33,10 @@ output DP-3 mode 5120x1440@164.999Hz pos 0 0
 #output eDP-1 mode 1920x1080@60Hz pos 0 0 scale 1.2
 
 ### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# Lock after 5 min idle, lock before sleep/hibernate
+exec swayidle -w \
+    timeout 300 'gtklock -d' \
+    before-sleep 'gtklock -d'
 
 ### Input configuration
 # Read `man 5 sway-input` for more information about this section.
