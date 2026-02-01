@@ -17,11 +17,11 @@
     "pulseaudio",
     "wireplumber#microphone",
     "backlight",
-    "battery#bat2",
     "tray",
     "power-profiles-daemon",
     "sway/language",
-    "keyboard-state"
+    "keyboard-state",
+    "battery"
   ],
   // Modules configuration
   "sway/workspaces": {
@@ -140,10 +140,7 @@
       ""
     ]
   },
-  "battery#bat2": {
-    "bat": "BAT2"
-  },
-  "power-profiles-daemon": {
+    "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
