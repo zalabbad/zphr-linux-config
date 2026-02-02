@@ -222,11 +222,14 @@ for_window [app_id="blueman-manager"] floating enable, resize set 700 700, move 
 for_window [app_id="1password"] floating enable, resize set 700 700, move position center
 for_window [app_id="nm-connection-editor"] floating enable, resize set 700 700, move position center
 
+# Scratchpad Windows
+for_window [app_id="kitty"] move scratchpad, scratchpad show
+
 
 
 
 exec lxpolkit
-exec nm-applet
+exec nm-applet --indicator
 exec_always bash -c "killall -q swaync: while pgrep -x swaync >/dev/null; do sleep 0.1; done; swaync -c"
 exec copyq --start-server
 exec_always bash -c "flatpak run org.munadi.Munadi &"
