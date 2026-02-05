@@ -75,7 +75,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
     bindsym $mod+w exec grim -g "$(slurp)" - | swappy -f -
 
     # OCR Screenshot (select region, extract text to clipboard)
-    bindsym $mod+Shift+w exec bash -c 'text=$(grim -g "$(slurp)" - | tesseract stdin stdout 2>/dev/null); echo -n "$text" | wl-copy; notify-send "OCR Result" "$text"'
+    bindsym $mod+Shift+w exec bash -c 'text=$(grim -g "$(slurp)" - | tesseract stdin stdout -l ara+eng 2>/dev/null); echo -n "$text" | wl-copy; notify-send "OCR Result" "$text"'
 
     # Clipboard
     bindsym $mod+v exec "copyq show"
