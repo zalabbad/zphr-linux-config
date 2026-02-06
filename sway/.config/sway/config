@@ -35,8 +35,8 @@ output DP-3 mode 5120x1440@164.999Hz pos 0 0
 ### Idle configuration
 # Lock after 5 min idle, lock before sleep/hibernate
 exec swayidle -w \
-    timeout 300 'gtklock -d' \
-    before-sleep 'gtklock -d'
+    timeout 300 'swaymsg input type:keyboard xkb_switch_layout 0 && gtklock -d' \
+    before-sleep 'swaymsg input type:keyboard xkb_switch_layout 0 && gtklock -d'
 
 ### Input configuration
 # Read `man 5 sway-input` for more information about this section.

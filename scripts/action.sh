@@ -12,7 +12,7 @@ case "$CHOICE" in
                 systemctl poweroff
                 ;;
             *"Lock"*)
-                gtklock
+                swaymsg input type:keyboard xkb_switch_layout 0 && gtklock
                 ;;
             *"Restart"*)
                 systemctl reboot
