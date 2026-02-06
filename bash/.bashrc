@@ -77,6 +77,7 @@ fi
 export PATH="\
 $HOME/.local/bin:\
 $HOME/.opencode/bin:\
+$HOME/.jbang/bin:\
 /home/linuxbrew/.linuxbrew/bin:\
 /home/linuxbrew/.linuxbrew/sbin:\
 $PATH"
@@ -99,5 +100,3 @@ if command -v tmux &> /dev/null; then
     tmux attach -t main || tmux new -s main
   fi
 fi
-
-
