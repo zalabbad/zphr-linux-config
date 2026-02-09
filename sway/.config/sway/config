@@ -77,6 +77,9 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
     # OCR Screenshot (select region, extract text to clipboard)
     bindsym $mod+Shift+w exec bash -c 'text=$(grim -g "$(slurp)" - | tesseract stdin stdout -l ara+eng 2>/dev/null); echo -n "$text" | wl-copy; notify-send "OCR Result" "$text"'
 
+    # Color Picker (pick color and copy to clipboard)
+    bindsym $mod+Alt+w exec bash -c 'color=$(hyprpicker); [ -n "$color" ] && echo -n "$color" | wl-copy && notify-send "Color Picked" "$color"'
+
     # Clipboard
     bindsym $mod+v exec "copyq show"
 
