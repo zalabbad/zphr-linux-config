@@ -13,7 +13,7 @@ bman() {
 
 # apt aliases
 alias q='apt search'
-alias i='sudo apt install'
+alias i='sudo apt install -y'
 alias u='sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && flatpak update -y'
 
 # Flatpak alisases
