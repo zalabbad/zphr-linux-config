@@ -38,7 +38,8 @@ inkscape = [
 
 [open]
 rules = [
-  { name = "*/", use = ["edit", "open", "reveal"] },
+  { url = "*/", use = ["edit", "open", "reveal"] },
+  { url = "*.ai", use = ["inkscape", "open", "reveal"] },
   { mime = "text/*", use = ["edit", "pager", "reveal"] },
   { mime = "image/svg+xml", use = ["inkscape", "open", "edit", "reveal"] },
   { mime = "image/*", use = ["open", "reveal"] },
