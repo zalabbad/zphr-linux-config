@@ -1,0 +1,74 @@
+window {
+    background-color: #11111b;
+}
+
+#window-box {
+    padding: 48px 64px;
+    margin: 0;
+    border: 2px solid #ff9e64;
+    border-radius: 0;
+    background-color: rgba(17, 17, 27, 0.92);
+}
+
+#clock-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 72px;
+    font-weight: bold;
+    color: #f9ffff;
+}
+
+#date-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 24px;
+}
+
+#input-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: #777777;
+}
+
+#input-field {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #11111b;
+    color: #f9ffff;
+    border: 2px solid #555555;
+    border-radius: 0;
+    padding: 8px 12px;
+    min-height: 36px;
+}
+
+#input-field:focus {
+    border-color: #ff9e64;
+}
+
+#unlock-button {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #ff9e64;
+    color: #11111b;
+    border-radius: 0;
+    border: none;
+    padding: 8px 24px;
+    font-weight: bold;
+    min-height: 36px;
+}
+
+#unlock-button:hover {
+    background-color: #ffb88a;
+}
+
+#unlock-button:active {
+    background-color: #e08b55;
+}
+
+#error-label {
+    font-family: "JetBrains Mono", monospace;
+    color: #e06c75;
+}
+
+#warning-label {
+    font-family: "JetBrains Mono", monospace;
+    color: #e5c07b;
+}
