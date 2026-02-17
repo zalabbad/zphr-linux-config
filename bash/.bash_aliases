@@ -24,7 +24,6 @@ alias fpi='flatpak install'
 # Tools
 alias lg='lazygit'
 alias ld='lazydocker'
-alias r='ranger'
 alias z='zellij'
 alias jb='jbang'
 alias ff='fastfetch'
