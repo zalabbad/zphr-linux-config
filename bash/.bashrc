@@ -2,11 +2,13 @@
 set -o vi
 
 # PS1 Style
-GREEN='\[\e[32m\]'
-YELLOW='\[\e[33m\]'
-BLUE='\[\e[34m\]'
-RESET='\[\e[0m\]'
-PS1="${GREEN}[${RESET}${GREEN}\u${YELLOW}@\h${YELLOW}]${RESET}:${BLUE}\w${RESET}\$ "
+if [ -n "$SSH_CONNECTION" ]; then
+  # Remote (SSH) — red hostname
+  PS1='\[\e[32m\][\[\e[32m\]\u\[\e[31m\]@\h\[\e[31m\]]\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\$ '
+else
+  # Local
+  PS1='\[\e[32m\][\[\e[32m\]\u\[\e[33m\]@\h\[\e[33m\]]\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\$ '
+fi
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
