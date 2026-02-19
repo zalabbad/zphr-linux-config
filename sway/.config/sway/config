@@ -58,6 +58,7 @@ bindsym $mod+space input "type:keyboard" xkb_switch_layout next
 #
     # System Actions
     bindsym $mod+a exec /home/zayed/zphr-linux-config/scripts/action.sh
+    bindsym $mod+Shift+a exec swaymsg input type:keyboard xkb_switch_layout 0 && gtklock
 
     # Start a terminal
     bindsym $mod+t exec $term
