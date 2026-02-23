@@ -7,8 +7,8 @@ alias e='exit'
 
 # bat aliases
 alias cat='batcat' # batcat is the name of the binary on debian
-bman() {
-  man "$@" | batcat -l man -p
+man() {
+  command man "$@" | batcat -l man -p
 }
 
 # apt aliases
