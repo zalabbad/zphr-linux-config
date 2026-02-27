@@ -242,3 +242,4 @@ exec_always bash -c "killall -q swaync: while pgrep -x swaync >/dev/null; do sle
 exec copyq --start-server
 exec_always bash -c "flatpak run org.munadi.Munadi &"
 exec_always bash -c "pkill waybar; waybar &"
+exec kdeconnect-indicator
