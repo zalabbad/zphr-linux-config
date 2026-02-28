@@ -35,6 +35,9 @@ pager = [
 inkscape = [
   { run = 'inkscape "$@"', orphan = true, desc = "Edit with Inkscape" },
 ]
+sxiv = [
+  { run = 'sxiv "$@"', orphan = true, desc = "View with sxiv" },
+]
 
 [open]
 rules = [
@@ -42,7 +45,7 @@ rules = [
   { url = "*.ai", use = ["inkscape", "open", "reveal"] },
   { mime = "text/*", use = ["edit", "pager", "reveal"] },
   { mime = "image/svg+xml", use = ["inkscape", "open", "edit", "reveal"] },
-  { mime = "image/*", use = ["open", "reveal"] },
+  { mime = "image/*", use = ["sxiv", "open", "reveal"] },
   { mime = "video/*", use = ["open", "reveal"] },
   { mime = "audio/*", use = ["open", "reveal"] },
   { mime = "inode/x-empty", use = ["edit", "reveal"] },
