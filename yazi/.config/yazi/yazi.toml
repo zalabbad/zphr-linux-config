@@ -36,7 +36,7 @@ inkscape = [
   { run = 'inkscape "$@"', orphan = true, desc = "Edit with Inkscape" },
 ]
 sxiv = [
-  { run = 'sxiv "$@"', orphan = true, desc = "View with sxiv" },
+  { run = 'cd "$(dirname "$1")" && n=0 && for f in *; do n=$((n+1)); [ "$f" = "$(basename "$1")" ] && break; done && sxiv -n "$n" -- *', orphan = true, desc = "View with sxiv" },
 ]
 
 [open]

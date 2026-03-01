@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = ["g", "s"]
+run  = "cd ~/zphr-second-brain"
+desc = "Cd to second brain"
