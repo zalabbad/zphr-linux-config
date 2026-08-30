@@ -23,6 +23,7 @@ alias fpi='flatpak install'
 alias code='flatpak run com.visualstudio.code'
 
 # Tools
+alias v='nvim'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias z='zellij'
